@@ -34,6 +34,7 @@
     
     QBPopupMenu *popupMenu = [[QBPopupMenu alloc] initWithItems:items];
     popupMenu.highlightedColor = [[UIColor colorWithRed:0 green:0.478 blue:1.0 alpha:1.0] colorWithAlphaComponent:0.8];
+    popupMenu.arrowDirection = QBPopupMenuArrowDirectionUp;
     self.popupMenu = popupMenu;
     
     QBPlasticPopupMenu *plasticPopupMenu = [[QBPlasticPopupMenu alloc] initWithItems:items];
@@ -41,17 +42,16 @@
     self.plasticPopupMenu = plasticPopupMenu;
 }
 
-
-- (IBAction)showPopupMenu:(id)sender
-{
+- (IBAction)showPopupMenu:(id)sender{
     UIButton *button = (UIButton *)sender;
-    [self.popupMenu showInView:self.view targetRect:button.frame animated:YES];
+//    [self.popupMenu showInView:self.view targetRect:button.frame animated:YES];
+    [self.popupMenu showInView:self.view targetView:button animated:YES];
 }
 
 - (IBAction)showPlasticPopupMenu:(id)sender
 {
     UIButton *button = (UIButton *)sender;
-    [self.plasticPopupMenu showInView:self.view targetRect:button.frame animated:YES];
+    [self.popupMenu showInView:self.view targetView:button animated:YES];
 }
 
 - (void)action

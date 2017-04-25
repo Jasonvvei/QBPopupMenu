@@ -21,6 +21,7 @@ static const NSTimeInterval kQBPopupMenuAnimationDuration = 0.2;
 
 @property (nonatomic, weak) UIView *view;
 @property (nonatomic, assign) CGRect targetRect;
+@property (nonatomic, assign) CGRect popupMenuFrame;
 
 @property (nonatomic, assign) NSUInteger page;
 @property (nonatomic, assign) QBPopupMenuArrowDirection actualArrorDirection;
@@ -99,13 +100,12 @@ static const NSTimeInterval kQBPopupMenuAnimationDuration = 0.2;
 
 #pragma mark - Managing Popup Menu
 
-- (void)showInView:(UIView *)view targetRect:(CGRect)targetRect animated:(BOOL)animated
-{
+- (void)showInView:(UIView *)view targetView:(UIView *)targetView animated:(BOOL)animated {
     if ([self isVisible]) {
         return;
     }
-    
     self.view = view;
+    CGRect targetRect = [targetView convertRect:targetView.bounds toView:view];
     self.targetRect = targetRect;
     
     // Decide arrow direction
@@ -159,7 +159,8 @@ static const NSTimeInterval kQBPopupMenuAnimationDuration = 0.2;
     
     // Create overlay view
     self.overlayView = ({
-        QBPopupMenuOverlayView *overlayView = [[QBPopupMenuOverlayView alloc] initWithFrame:view.bounds];
+        QBPopupMenuOverlayView *overlayView = [[QBPopupMenuOverlayView alloc] initWithFrame:self.popupMenuFrame];
+        overlayView.backgroundColor = [UIColor cyanColor];
         overlayView.popupMenu = self;
         
         overlayView;
@@ -512,8 +513,8 @@ static const NSTimeInterval kQBPopupMenuAnimationDuration = 0.2;
                                 round(popupMenuFrame.size.height));
     arrowPoint = CGPointMake(round(arrowPoint.x),
                              round(arrowPoint.y));
-    
-    self.frame = popupMenuFrame;
+    self.popupMenuFrame = popupMenuFrame;
+    self.frame = CGRectMake(0.0, 0.0, popupMenuFrame.size.width, popupMenuFrame.size.height);
     self.arrowPoint = arrowPoint;
 }
 
