@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DECC03D1EAF210C00FD73AE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DECC03C1EAF210C00FD73AE /* Launch Screen.storyboard */; };
 		AA7C7DAE184C791F00CF859B /* QBPlasticPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C7DA3184C791F00CF859B /* QBPlasticPopupMenu.m */; };
 		AA7C7DAF184C791F00CF859B /* QBPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C7DA5184C791F00CF859B /* QBPopupMenu.m */; };
 		AA7C7DB0184C791F00CF859B /* QBPopupMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C7DA7184C791F00CF859B /* QBPopupMenuItem.m */; };
@@ -28,6 +29,7 @@
 		AAD22706183F91C300C27616 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD226E8183F91C300C27616 /* UIKit.framework */; };
 		AAD2270E183F91C300C27616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD2270C183F91C300C27616 /* InfoPlist.strings */; };
 		AAD22710183F91C300C27616 /* QBPopupMenuDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2270F183F91C300C27616 /* QBPopupMenuDemoTests.m */; };
+		AF2FDB21C879267EAD4504B0 /* libPods-QBPopupMenuDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8449669E66B1631DE66A4916 /* libPods-QBPopupMenuDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DECC03C1EAF210C00FD73AE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		774A779F4B20FC4DB5FFC386 /* Pods-QBPopupMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBPopupMenuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QBPopupMenuDemo/Pods-QBPopupMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		802970558075AF04F5266FC2 /* Pods-QBPopupMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBPopupMenuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QBPopupMenuDemo/Pods-QBPopupMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8449669E66B1631DE66A4916 /* libPods-QBPopupMenuDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QBPopupMenuDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7C7DA2184C791F00CF859B /* QBPlasticPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBPlasticPopupMenu.h; sourceTree = "<group>"; };
 		AA7C7DA3184C791F00CF859B /* QBPlasticPopupMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBPlasticPopupMenu.m; sourceTree = "<group>"; };
 		AA7C7DA4184C791F00CF859B /* QBPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBPopupMenu.h; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 				AAD226E7183F91C300C27616 /* CoreGraphics.framework in Frameworks */,
 				AAD226E9183F91C300C27616 /* UIKit.framework in Frameworks */,
 				AAD226E5183F91C300C27616 /* Foundation.framework in Frameworks */,
+				AF2FDB21C879267EAD4504B0 /* libPods-QBPopupMenuDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77FD87DB35EBBEF043FA828C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				774A779F4B20FC4DB5FFC386 /* Pods-QBPopupMenuDemo.debug.xcconfig */,
+				802970558075AF04F5266FC2 /* Pods-QBPopupMenuDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AA7C7DA1184C791F00CF859B /* QBPopupMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +142,7 @@
 				AAD22709183F91C300C27616 /* QBPopupMenuDemoTests */,
 				AAD226E3183F91C300C27616 /* Frameworks */,
 				AAD226E2183F91C300C27616 /* Products */,
+				77FD87DB35EBBEF043FA828C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +162,7 @@
 				AAD226E6183F91C300C27616 /* CoreGraphics.framework */,
 				AAD226E8183F91C300C27616 /* UIKit.framework */,
 				AAD22703183F91C300C27616 /* XCTest.framework */,
+				8449669E66B1631DE66A4916 /* libPods-QBPopupMenuDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +175,7 @@
 				AAD226F4183F91C300C27616 /* AppDelegate.m */,
 				AAD226F9183F91C300C27616 /* ViewController.h */,
 				AAD226FA183F91C300C27616 /* ViewController.m */,
+				2DECC03C1EAF210C00FD73AE /* Launch Screen.storyboard */,
 				AAD22719183F91CC00C27616 /* Resources */,
 				AAD226EB183F91C300C27616 /* Supporting Files */,
 			);
@@ -209,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAD22713183F91C300C27616 /* Build configuration list for PBXNativeTarget "QBPopupMenuDemo" */;
 			buildPhases = (
+				2EA527D6FA9B6092D43FCB36 /* [CP] Check Pods Manifest.lock */,
 				AAD226DD183F91C300C27616 /* Sources */,
 				AAD226DE183F91C300C27616 /* Frameworks */,
 				AAD226DF183F91C300C27616 /* Resources */,
+				277016CC6FACD3DE3F092E88 /* [CP] Embed Pods Frameworks */,
+				8BD048ADB242222453483B2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +271,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Katsuma Tanaka";
 				TargetAttributes = {
+					AAD226E0183F91C300C27616 = {
+						DevelopmentTeam = V87H9P7AB7;
+					};
 					AAD22701183F91C300C27616 = {
 						TestTargetID = AAD226E0183F91C300C27616;
 					};
@@ -281,6 +306,7 @@
 				AAD226FD183F91C300C27616 /* Images.xcassets in Resources */,
 				AAD226EF183F91C300C27616 /* InfoPlist.strings in Resources */,
 				AA7FA185184321600044F5D7 /* background.jpg in Resources */,
+				2DECC03D1EAF210C00FD73AE /* Launch Screen.storyboard in Resources */,
 				AAD226F8183F91C300C27616 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +320,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277016CC6FACD3DE3F092E88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QBPopupMenuDemo/Pods-QBPopupMenuDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EA527D6FA9B6092D43FCB36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD048ADB242222453483B2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QBPopupMenuDemo/Pods-QBPopupMenuDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAD226DD183F91C300C27616 /* Sources */ = {
@@ -432,13 +506,14 @@
 		};
 		AAD22714183F91C300C27616 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774A779F4B20FC4DB5FFC386 /* Pods-QBPopupMenuDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = V87H9P7AB7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QBPopupMenuDemo/QBPopupMenuDemo-Prefix.pch";
 				INFOPLIST_FILE = "QBPopupMenuDemo/QBPopupMenuDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -446,13 +521,14 @@
 		};
 		AAD22715183F91C300C27616 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802970558075AF04F5266FC2 /* Pods-QBPopupMenuDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = V87H9P7AB7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QBPopupMenuDemo/QBPopupMenuDemo-Prefix.pch";
 				INFOPLIST_FILE = "QBPopupMenuDemo/QBPopupMenuDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
